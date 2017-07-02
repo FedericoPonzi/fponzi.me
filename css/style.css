@@ -1,0 +1,151 @@
+/**
+    No, wait this isn't a theme?! :O
+**/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+
+html,body{height:100%;}
+
+body {
+    padding-top:3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+    box-sizing:border-box;
+    height:100%;
+}
+section{
+  position:relative;
+  top:-5%;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  min-height: 97%;
+  height: 97%;
+  min-width:100%;
+  display:table;
+  color:white;
+}
+section .title{
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #FF6D00;
+  display: inline-block;
+}
+
+/** colors: **/
+.hero{
+  background-color:#7CB342;
+}
+.hero-navbar{
+  background-color: #558B2F;
+}
+.portfolio{
+  background-color: #1E88E5;
+}
+.portfolio-navbar{
+  background-color: #1565C0;
+}
+.contacts{
+  background-color: #757575;
+}
+.contacts-navbar{
+  background-color: #424242;
+}
+/**hero section **/
+.intro-title{
+  font-size: 1.5em;
+  text-shadow: 1px 1px rgba(0, 0, 17, 0.16);
+}
+
+.whoami{
+  font-family: monospace;
+}
+
+.custom-btn-primary{
+  color: #fff;
+  /*box-shadow: 0px 1px 0px #FF8A33 inset, 0px -1px 0px #FA6700 inset, 0px 0px 5px rgba(0, 0, 0, 0.5);
+  */
+  text-shadow: 0.5px 0.5px rgba(255, 145, 0, 0.59);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #FF6D00;
+  padding: 15px 10px;
+  margin-top:40px;
+  font-size: 0.5em;
+}
+a:hover{
+    transform: translateY(1px);
+}
+.custom-btn-primary:active,
+.custom-btn-primary:focus,
+.custom-btn-primary:visited, .custom-btn-primary:hover{
+  border: 1px solid #FF6D00;
+  background-color:#FF9100;
+  outline: none !important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+
+  transform: translateY(2px);
+}
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  color:black;
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+/** Contacts **/
+
+
+/** Footer **/
+
+.site-footer {
+  padding-top:20px;
+  padding-bottom:5px;
+  margin: 0px auto;
+}
+
+
+
+/** Responsive stuff **/
+@media (min-width: 576px) {
+  .custom-btn-primary{
+    font-size: 0.6em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media  (min-width: 768px) {
+  .intro-title{
+      font-size: 2.5em;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .intro-title{
+      font-size: 3.5em;
+    }
+    .custom-btn-primary{
+      font-size: 1em;
+      background-color:transparent;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
