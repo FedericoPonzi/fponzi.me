@@ -22,9 +22,15 @@ body {
     box-sizing:border-box;
     height:100%;
 }
+
 .custom-navbar{
   padding-bottom:15px;
 }
+
+.row > *{
+  margin-bottom: 20px;
+}
+
 section{
   position:relative;
   top:-5%;
@@ -37,7 +43,7 @@ section{
   color:white;
   border-bottom: 1px solid #FF9100;
 }
-section .title{
+.title{
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -50,6 +56,7 @@ section .title{
 .hero{
   background-color:#7CB342;
 }
+
 .hero-navbar{
   background-color: #558B2F;
 }
@@ -65,9 +72,14 @@ section .title{
 .contacts-navbar{
   background-color: #424242;
 }
+
+.accent{
+  background-color:#FF6D00;
+}
+
 /**hero section **/
 .intro-title{
-  font-size: 1.5em;
+  font-size: 2em;
   text-shadow: 1px 1px rgba(0, 0, 17, 0.16);
 }
 
@@ -85,7 +97,7 @@ section .title{
   border: 1px solid #FF6D00;
   padding: 15px 10px;
   margin-top:40px;
-  font-size: 0.5em;
+  font-size: 1em;
 }
 a:hover{
     transform: translateY(1px);
@@ -117,7 +129,56 @@ a:hover{
   color:black;
   border: 0px;
 }
+
+.card-tags{
+  color: #808080;
+  letter-spacing: 0.1em;
+}
 /** Contacts **/
+.social{
+  font-family:monospace;
+  background-color:#EEEEEE;
+  color:black;
+  padding-left:5px;
+
+}
+.social-item{
+  list-style: none;
+  margin-bottom:10px;
+}
+.social-item > a:hover{
+  text-decoration: none;
+  font-weight: bold;
+}
+.social > p{
+}
+
+.contacts-input-text{
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+      border: 0;
+      border-bottom: 1px solid #000;
+      color: #fff;
+      border-radius:0px;
+}
+.contacts-input-text:focus{
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0;
+  border-bottom: 1px solid #000;
+  border-radius:0px;
+  color: #fff;
+}
+.contacts-input-text::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #EEEEEE;
+}
+.contacts-input-text::-moz-placeholder { /* Firefox 19+ */
+  color: #EEEEEE;
+}
+.contacts-input-text:-ms-input-placeholder { /* IE 10+ */
+  color: #EEEEEE;
+}
+.contacts-input-text:-moz-placeholder { /* Firefox 18- */
+  color: #EEEEEE;
+}
 
 
 /** Footer **/
