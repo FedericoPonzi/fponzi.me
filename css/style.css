@@ -22,6 +22,9 @@ body {
     box-sizing:border-box;
     height:100%;
 }
+.custom-navbar{
+  padding-bottom:15px;
+}
 section{
   position:relative;
   top:-5%;
@@ -32,12 +35,15 @@ section{
   min-width:100%;
   display:table;
   color:white;
+  border-bottom: 1px solid #FF9100;
 }
 section .title{
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   border-bottom: 2px solid #FF6D00;
   display: inline-block;
+  margin-bottom: 30px;
 }
 
 /** colors: **/
@@ -106,7 +112,11 @@ a:hover{
   100% { opacity:1; }
 }
 
-
+/** portfolio **/
+.card {
+  color:black;
+  border: 0px;
+}
 /** Contacts **/
 
 
