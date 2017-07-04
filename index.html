@@ -26,49 +26,50 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-collapse" aria-controls="menu-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="container">
         <a class="navbar-brand" href="#">fponzi.me</a>
 
         <div class="collapse navbar-collapse" id="menu-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#hero">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#portfolio">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#about">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contacts</a>
                 </li>
             </ul>
         </div>
+      </div>
     </nav>
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <img src="#http://via.placeholder.com/350x150" class="img-fluid img-circle img-rounded">
             <h1 class="intro-title">Hello, I'm Federico Ponzi</h1>
             <p><span id="whoami" class="whoami"></span><span class="typed-cursor"></span></p>
-            <button type="button" class="btn btn-outline-primary custom-btn-primary">Show me the cool stuff</button>
-            <div class="divider">
-                <div class="card text-center">
-                    <div class="card-header">
-                        Featured
-                    </div>
-                    <div class="card-block">
-                        <h4 class="card-title">What I'm working on right now</h4>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        2 days ago
-                    </div>
+            <a href="#portfolio" type="button" class="btn btn-outline-primary custom-btn-primary">Show me the cool stuff</a>
+            <div class="divider" style="margin:2em 0;"></div>
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title">What I'm working on right now</h4>
+                    <p class="card-text">I'm studying for my BDC and security courses.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
             </div>
-            <!-- /.container -->
+        </div>
+        <!-- /.container -->
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <h2 class="title">Some of my projects</h2>
         <p>I strongly believe in Open Source. When possible, all the work I do it's released on my Github account.
             <div class="container-fluid">
@@ -82,7 +83,7 @@
                             <div class="card-block">
                                 <p class="card-tags">#flask #python #postgresql #html #css #javascript #heroku #website #opensource</p>
                             </div>
-                            <div class="card-block text-right">
+                            <div class="card-block card-links">
                                 <a href="http://isitdown.site" class="card-link"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
                                 <a href="https://github.com/FedericoPonzi/isitdown.site" class="card-link"><i class="fa fa-github"  aria-hidden="true"></i> Github</a>
                             </div>
@@ -97,21 +98,24 @@
                             <div class="card-block">
                                 <p class="card-tags">#python #telegram #python-telegram-bot #bot #opensource</p>
                             </div>
-                            <div class="card-block text-right">
+                            <div class="card-block card-links">
                                 <a href="http://isitdown.site" class="card-link"><i class="fa fa-telegram" aria-hidden="true"></i> Chat on Telegram</a>
-                                <a href="https://github.com/FedericoPonzi/isitdown.site" class="card-link"><i class="fa fa-github"  aria-hidden="true"></i> Github</a>
+                                <a href="https://github.com/FedericoPonzi/isitdown.site" class="card-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="card w-90">
-                            <img class="card-img-top img-fluid" src="img/isitdown.png" alt="Isitdown.site">
+                            <img class="card-img-top img-fluid" src="img/linux-day-2017.png" alt="Linux day 2017 Rome">
                             <div class="card-block">
-                                <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text text-justify">The website for the Linux Day 2017 of Rome,.</p>
                             </div>
                             <div class="card-block">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                                <p class="card-tags">#html5 #css3 #bootstrap #linux #opensource</p>
+                            </div>
+                            <div class="card-block card-links">
+                                <a href="https://ld17.lugroma3.org" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
+                                <a href="#" class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i> Github soon!</a>
                             </div>
                         </div>
                     </div>
@@ -119,61 +123,65 @@
                 </div>
             </div>
     </section>
-    <div class="">
-    </div>
-    <div class="about">
-    </div>
-    <section class="contacts">
+    <section id="about" class="about">
+    </section>
+    <section id="contacts" class="contacts">
         <h2 class="title">Let's get in touch!</h2>
         <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-md-5 col-sm-12">
-                <div>
-                    <div class="social text-left">
-                        <p>`print ("http://federicoponzi.link/" + social) for social in [</p>
-                        <ul>
-                            <li class="social-item">
-                                <a href="http://federicoponzi.link/linkedin"><img src="img/social/linkedin.svg" width="24"> linkedin</a>,</li>
-                            <li class="social-item">
-                                <a href="http://federicoponzi.link/github"><img src="img/social/github.svg" width="24"> github</a>,</li>
-                            <li class="social-item">
-                                <a href="http://federicoponzi.link/twitter"><img src="img/social/twitter.svg" width="24"> twitter</a>,</li>
-                            <li class="social-item">
-                                <a href="http://federicoponzi.link/telegram"><img src="img/social/telegram.svg" width="24"> telegram</a>,</li>
-                            <li class="social-item">
-                                <a href="http://federicoponzi.link/facebook"><img src="img/social/facebook.svg" width="24"> facebook</a>
-                            </li>
-                        </ul>
-                        <p>]`</p>
+            <div class="row">
+                <div class="col-xl-6 col-md-5 col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="social text-left">
+                                <p><span style='color:#696969; '>#!/usr/bin/python3</span><br> map(
+                                    <span style='color:#800000; font-weight:bold; '>lambda</span> social : <span style='color:#800000; font-weight:bold; '>print</span>("http://federicoponzi.link/" + social), [</p>
+                                <ul>
+                                    <li class="social-item">
+                                        <a href="http://federicoponzi.link/linkedin"><img src="img/social/linkedin.svg" width="24"> "linkedin"</a>,</li>
+                                    <li class="social-item">
+                                        <a href="http://federicoponzi.link/github"><img src="img/social/github.svg" width="24"> "github"</a>,</li>
+                                    <li class="social-item">
+                                        <a href="http://federicoponzi.link/twitter"><img src="img/social/twitter.svg" width="24"> "twitter"</a>,</li>
+                                    <li class="social-item">
+                                        <a href="http://federicoponzi.link/telegram"><img src="img/social/telegram.svg" width="24"> "telegram"</a>,</li>
+                                    <li class="social-item">
+                                        <a href="http://federicoponzi.link/facebook"><img src="img/social/facebook.svg" width="24"> "facebook"</a>
+                                    </li>
+                                </ul>
+                                <p>])<br>
+                                    <span style='color:#696969; '># Go ahead, copy-paste and run this script!<br>
+                                    # federicoponzi.link/{social} it's an handy shortcut for my social profiles</span><br>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-7 col-xl-6 text-left">
-              <p>Do you prefer send me an email? Fill the form below!</p>
-                <form>
-                    <div class="form-group row">
-                        <div class="col-sm-6">
-                          <input type="text" class="form-control contacts-input-text" id="inputPassword3" placeholder="Name">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-xl-6 text-left">
+                    <p>Do you prefer emails? Fill the form below!</p>
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control contacts-input contacts-input-text" id="inputPassword3" placeholder="Name">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control contacts-input contacts-input-text" id="email" placeholder="Email">
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                          <input type="email" class="form-control contacts-input-text" id="email" placeholder="Email">
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <textarea class="form-control contacts-input contacts-textarea" id="exampleTextarea" rows="6" placeholder="Insert your message"></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-12">
-                          <textarea class="form-control contacts-input-text" id="exampleTextarea" rows="3" placeholder="Insert your message"></textarea>
+                        <div class="form-group row">
+                            <div class="col-sm-2 ">
+                                <button type="submit" class="btn btn-primary contacts-send">Contact me</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-2 ">
-                            <button type="submit" class="btn btn-primary accent">Contact me</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
-      </div>
     </section>
     <footer class="site-footer text-center">
         <p>Thanks for visiting my site!</p>
@@ -195,14 +203,17 @@
                 if (direction === "down") {
                     if ($(document).scrollTop() > 2) {
                         $("#menu").removeClass("hero");
+                        $("#menu").addClass("navbar-shadow");
                         $("#menu").addClass("navbar-light");
                         $("#menu").addClass("hero-navbar");
                     } else {
                         $("#menu").addClass("hero");
+                        $("#menu").removeClass("navbar-shadow");
                         $("#menu").removeClass("hero-navbar");
                     }
                 } else {
                     $("#menu").addClass("hero");
+                    $("#menu").removeClass("navbar-shadow");
                     $("#menu").removeClass("navbar-light");
                     $("#menu").removeClass("hero-navbar");
                 }
@@ -228,7 +239,26 @@
                 }
             });
 
-            var whoami_w = ["I'm a computer scientist", "I'm a software developer", "I'm an open source lover", "I'm a Linux user", "I'm a frontend developer", "I'm a geek", "I'm a nerd", "I'm a blogger"];
+            $(document).on('click', 'a[href^="#"]', function(e) {
+                // target element id
+                var id = $(this).attr('href');
+
+                // target element
+                var $id = $(id);
+                if ($id.length === 0) {
+                    return;
+                }
+
+                // prevent standard hash navigation (avoid blinking in IE)
+                e.preventDefault();
+
+                // top position relative to the document
+                var pos = $id.offset().top;
+
+                // animated top scrolling
+                $('body, html').animate({scrollTop: pos});
+            });
+            var whoami_w = ["I'm a computer scientist", "I'm a software developer", "I'm an open source lover", "I'm a Linux user", "I'm a fullstack developer", "I'm a geek", "I'm a nerd", "I'm a blogger"];
             var typed = new Typed('.whoami', {
                 strings: whoami_w,
                 typeSpeed: 60,
