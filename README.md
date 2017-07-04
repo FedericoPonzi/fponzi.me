@@ -33,6 +33,15 @@ Primary Light
 Primary Dark
 #1565C0
 
+About:
+Primary Shade
+#E53935
+Primary Light
+#EF9A9A
+Primary Dark
+#C62828
+
+
 contacts:
 Primary Shade
 #757575

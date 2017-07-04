@@ -63,11 +63,18 @@ section{
 .hero-navbar{
   background-color: #558B2F;
 }
+
 .portfolio{
   background-color: #1E88E5;
 }
 .portfolio-navbar{
   background-color: #1565C0;
+}
+.about{
+  background-color: #E53935;
+}
+.about-navbar{
+  background-color: #C62828;
 }
 .contacts{
   background-color: #757575;

@@ -31,16 +31,16 @@
 
         <div class="collapse navbar-collapse" id="menu-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#hero">Home <span class="sr-only">(current)</span></a>
+                <li id="nav-home" class="nav-item active">
+                    <a class="nav-link" href="#hero">Home</a>
                 </li>
-                <li class="nav-item">
+                <li id="nav-portfolio" class="nav-item">
                     <a class="nav-link" href="#portfolio">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li id="nav-about" class="nav-item">
                     <a class="nav-link" href="#about">About me</a>
                 </li>
-                <li class="nav-item">
+                <li id="nav-contacts" class="nav-item">
                     <a class="nav-link" href="#contacts">Contacts</a>
                 </li>
             </ul>
@@ -124,6 +124,8 @@
             </div>
     </section>
     <section id="about" class="about">
+      <h2 class="title">About me</h2>
+      <p>I'm a passionate developer.</h2>
     </section>
     <section id="contacts" class="contacts">
         <h2 class="title">Let's get in touch!</h2>
@@ -196,46 +198,99 @@
 
     <script>
         "use strict";
+        function onEnterSection(sect){
+          if(sect === "top"){
+            $("#nav-home").addClass("active");
+            $("#menu").addClass("hero");
+            $("#menu").removeClass("navbar-shadow");
+          }
+          if(sect === "hero"){
+            $("#nav-home").addClass("active");
+            $("#menu").addClass("hero-navbar navbar-shadow");
+          }
+          if(sect === "portfolio"){
+            $("#nav-portfolio").addClass("active");
+            $("#menu").addClass("portfolio-navbar");
+          }
+          if(sect === "about"){
+            $("#nav-about").addClass("active");
+            $("#menu").addClass("about-navbar");
+          }
+          if(sect === "contacts"){
+            $("#nav-contacts").addClass("active");
+            $("#menu").addClass("contacts-navbar");
+          }
+        }
+        function onExitSection(sect){
+          if(sect === "top"){
+            $("#menu").removeClass("hero");
+          }
+          if(sect === "hero"){
+            $("#menu").removeClass("hero-navbar");
+            $("#nav-home").removeClass("active");
+          }
+          if(sect === "portfolio"){
+            $("#nav-portfolio").removeClass("active");
+            $("#menu").removeClass("portfolio-navbar");
+          }
+          if(sect === "about"){
+            $("#nav-about").removeClass("active");
+            $("#menu").removeClass("about-navbar");
+          }
+          if(sect === "contacts"){
+            $("#nav-contacts").removeClass("active");
+            $("#menu").removeClass("contacts-navbar");
+          }
+        }
+
+
+
         var main = function() {
             new WOW().init();
-
             $('.hero').waypoint(function(direction) {
+                            console.log("dot");
                 if (direction === "down") {
-                    if ($(document).scrollTop() > 2) {
-                        $("#menu").removeClass("hero");
-                        $("#menu").addClass("navbar-shadow");
-                        $("#menu").addClass("navbar-light");
-                        $("#menu").addClass("hero-navbar");
-                    } else {
-                        $("#menu").addClass("hero");
-                        $("#menu").removeClass("navbar-shadow");
-                        $("#menu").removeClass("hero-navbar");
-                    }
+                  if ($(document).scrollTop() > 2) {
+                    onExitSection("top");
+                    onEnterSection("hero");
+                  }else{
+                    onEnterSection("top");
+                    onExitSection("hero");
+                  }
                 } else {
-                    $("#menu").addClass("hero");
-                    $("#menu").removeClass("navbar-shadow");
-                    $("#menu").removeClass("navbar-light");
-                    $("#menu").removeClass("hero-navbar");
+                  onEnterSection("top");
+                  onExitSection("hero");
                 }
             });
 
             $('.portfolio').waypoint(function(direction) {
+              console.log("nop");
                 if (direction === "down") {
-                    $("#menu").addClass("portfolio-navbar");
-                    $("#menu").removeClass("hero-navbar");
+                    onExitSection("hero");
+                    onEnterSection("portfolio");
                 } else {
-                    $("#menu").addClass("hero-navbar");
-                    $("#menu").removeClass("portfolio-navbar");
+                    onEnterSection("hero");
+                    onExitSection("portfolio");
+                }
+            });
+            $('.about').waypoint(function(direction) {
+              console.log("WOT");
+                if (direction === "down") {
+                    onEnterSection("about");
+                    onExitSection("portfolio");
+                } else {
+                    onExitSection("about");
+                    onEnterSection("portfolio");
                 }
             });
 
             $('.contacts').waypoint(function(direction) {
                 if (direction === "down") {
-                    $("#menu").addClass("contacts-navbar");
-                    $("#menu").removeClass("hero-navbar");
+                    onEnterSection("contacts");
+                    onExitSection("about");
                 } else {
-                    $("#menu").addClass("portfolio-navbar");
-                    $("#menu").removeClass("contacts-navbar");
+                    onEnterSection("about");
+                    onExitSection("contacts");
                 }
             });
 
