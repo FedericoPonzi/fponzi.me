@@ -20,8 +20,7 @@
     </style>
 </head>
 
-<body>
-
+<body data-spy="scroll" data-target="#menu">
     <nav id="menu" class="navbar navbar-right navbar-toggleable-md fixed-top navbar-inverse custom-navbar hero">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-collapse" aria-controls="menu-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,7 +30,7 @@
 
         <div class="collapse navbar-collapse" id="menu-collapse">
             <ul class="navbar-nav mr-auto">
-                <li id="nav-home" class="nav-item active">
+                <li id="nav-home" class="nav-item">
                     <a class="nav-link" href="#hero">Home</a>
                 </li>
                 <li id="nav-portfolio" class="nav-item">
@@ -200,24 +199,19 @@
         "use strict";
         function onEnterSection(sect){
           if(sect === "top"){
-            $("#nav-home").addClass("active");
             $("#menu").addClass("hero");
             $("#menu").removeClass("navbar-shadow");
           }
           if(sect === "hero"){
-            $("#nav-home").addClass("active");
             $("#menu").addClass("hero-navbar navbar-shadow");
           }
           if(sect === "portfolio"){
-            $("#nav-portfolio").addClass("active");
             $("#menu").addClass("portfolio-navbar");
           }
           if(sect === "about"){
-            $("#nav-about").addClass("active");
             $("#menu").addClass("about-navbar");
           }
           if(sect === "contacts"){
-            $("#nav-contacts").addClass("active");
             $("#menu").addClass("contacts-navbar");
           }
         }
@@ -227,18 +221,14 @@
           }
           if(sect === "hero"){
             $("#menu").removeClass("hero-navbar");
-            $("#nav-home").removeClass("active");
           }
           if(sect === "portfolio"){
-            $("#nav-portfolio").removeClass("active");
             $("#menu").removeClass("portfolio-navbar");
           }
           if(sect === "about"){
-            $("#nav-about").removeClass("active");
             $("#menu").removeClass("about-navbar");
           }
           if(sect === "contacts"){
-            $("#nav-contacts").removeClass("active");
             $("#menu").removeClass("contacts-navbar");
           }
         }
