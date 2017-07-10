@@ -15,9 +15,6 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <style>
-
-    </style>
 </head>
 
 <body data-spy="scroll" data-target="#menu">
@@ -54,15 +51,17 @@
             <p><span id="whoami" class="whoami"></span><span class="typed-cursor"></span></p>
             <a href="#portfolio" type="button" class="btn btn-outline-primary custom-btn-primary">Show me the cool stuff</a>
             <div class="divider" style="margin:2em 0;"></div>
+            <div class="row">
+              <div class="offset-md-3 col-md-6">
             <div class="card text-center">
                 <div class="card-block">
                     <h4 class="card-title">What I'm working on right now</h4>
-                    <p class="card-text">I'm studying for my BDC and security courses.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text"><?php include "what.txt" ?></p>
                 </div>
-                <div class="card-footer text-muted">
+                <!-- It's on the todo list  c':
+                  <div class="card-footer text-muted">
                     2 days ago
-                </div>
+                </div>-->
             </div>
         </div>
         <!-- /.container -->
@@ -70,12 +69,12 @@
 
     <section id="portfolio" class="portfolio">
         <h2 class="title">Some of my projects</h2>
-        <p>I strongly believe in Open Source. When possible, all the work I do it's released on my Github account.
-            <div class="container-fluid">
+        <p>Check out some of my projects! I strongly believe in Open Source. When possible, all the work I do is released on my Github account.</p>
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="card w-90">
-                            <img class="card-img-top img-fluid" src="img/isitdown.png" alt="Isitdown.site">
+                            <img class="card-img-top img-fluid" src="img/projects/isitdown.png" alt="Isitdown.site">
                             <div class="card-block">
                                 <p class="card-text text-justify">This is a small but useful site, to check if other sites are down.</p>
                             </div>
@@ -90,27 +89,67 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="card w-90">
-                            <img class="card-img-top img-fluid" src="img/TrasportiRomaBot.png" alt="TrasportiRomaBot">
+                            <img class="card-img-top img-fluid" src="img/projects/TrasportiRomaBot.png" alt="TrasportiRomaBot">
                             <div class="card-block">
                                 <p class="card-text text-justify">This is a Telegram bot, made with python-telegram-bot APIs, to check timetables of the Atac's busses (Rome) and other info.</p>
                             </div>
                             <div class="card-block">
-                                <p class="card-tags">#python #telegram #python-telegram-bot #bot #opensource</p>
+                                <p class="card-tags">#python #telegram #python-telegram-bot #bot #heroku #opensource</p>
                             </div>
                             <div class="card-block card-links">
-                                <a href="http://isitdown.site" class="card-link"><i class="fa fa-telegram" aria-hidden="true"></i> Chat on Telegram</a>
-                                <a href="https://github.com/FedericoPonzi/isitdown.site" class="card-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                              <a href="https://telegram.me/TransportiRomaBot" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
+                              <a href="https://github.com/FedericoPonzi/TrasnsportiRomaBot" class="card-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="card w-90">
-                            <img class="card-img-top img-fluid" src="img/linux-day-2017.png" alt="Linux day 2017 Rome">
+                            <img class="card-img-top img-fluid" src="img/projects/linux-day-2017.png" alt="Linux day 2017 Rome">
                             <div class="card-block">
-                                <p class="card-text text-justify">The website for the Linux Day 2017 of Rome,.</p>
+                                <p class="card-text text-justify">The website for the Linux Day 2017 in Rome.</p>
                             </div>
                             <div class="card-block">
                                 <p class="card-tags">#html5 #css3 #bootstrap #linux #opensource</p>
+                            </div>
+                            <div class="card-block card-links">
+                                <a href="https://ld17.lugroma3.org" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
+                                <a href="#" class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i> Github soon!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="card w-90">
+                            <img class="card-img-top img-fluid" style="background-color:black;" src="img/projects/versah-italy.png" alt="Versah-Italy">
+                            <div class="card-block">
+                                <p class="card-text text-justify">Versah-Italy is the italian retailer for the Versah® dental manufacturer.</p>
+                            </div>
+                            <div class="card-block">
+                                <p class="card-tags">#html5 #css3 #bootstrap #php #ecommerce</p>
+                            </div>
+                            <div class="card-block card-links">
+                                <a href="http://versah-italy.it" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="card w-90">
+                            <img class="card-img-top img-fluid" src="img/projects/vype.jpg" alt="Vype">
+                            <div class="card-block">
+                                <p class="card-text text-justify">I've made an Android app for a famous e-cigarette brand Vype spa. Sadly the app was for an internal use.</p>
+                            </div>
+                            <div class="card-block">
+                                <p class="card-tags">#android #tablet #firebase</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="card w-90">
+                            <img class="card-img-top img-fluid" src="img/projects/rankit.png" alt="RankIT">
+                            <div class="card-block">
+                                <p class="card-text text-justify">RankIT is An Android (Material design) application made for my Scolarship with NYU:  Designing and developing an app for general purpose ranking of items from mathematical theory to the pratical realization, especially in app development procedure.</p>
+                            </div>
+                            <div class="card-block">
+                                <p class="card-tags">#android #java #material-design #scolarship #university</p>
                             </div>
                             <div class="card-block card-links">
                                 <a href="https://ld17.lugroma3.org" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
@@ -124,7 +163,18 @@
     </section>
     <section id="about" class="about">
       <h2 class="title">About me</h2>
-      <p>I'm a passionate developer.</h2>
+      <p>Some fast news about me:</p>
+        <ul>
+          <li>I have a Bachelor in Computer Science, and I'm pursuing MSC in Computer Science</li>
+          <li>In my spare time I blog on informaticalab.com</li>
+          <li>I know several programming languages, but I feel fluent in Java and Python.</li>
+          <li>I love everything related to computers and computer science</li>
+          <li>I love learning</li>
+          <li>Music is very important to me</li>
+          <li>I try to live as healthy as I can</li>
+          <li>I try to keep updated my <a href="http://federicoponzi.link/linkedin">Linkedin</a> profile, so you can find my previous works and achivements there.</li>
+        </ul>
+
     </section>
     <section id="contacts" class="contacts">
         <h2 class="title">Let's get in touch!</h2>
@@ -151,7 +201,7 @@
                                 </ul>
                                 <p>])<br>
                                     <span style='color:#696969; '># Go ahead, copy-paste and run this script!<br>
-                                    # federicoponzi.link/{social} it's an handy shortcut for my social profiles</span><br>
+                                    # federicoponzi.link/{social} it's a handy shortcut for my social profiles</span><br>
                                 </p>
                             </div>
                         </div>

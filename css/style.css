@@ -1,11 +1,12 @@
 /**
-    No, wait this isn't a theme?! :O
+    No, wait, this isn't a template?! :O
 **/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
 
 
 html,body{height:100%;}
+
 .navbar{
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -30,6 +31,10 @@ body {
     height:100%;
 }
 
+li{
+  list-style-position: inside;
+  font-size:1.1em;
+}
 .custom-navbar{
   padding-bottom:15px;
 }
