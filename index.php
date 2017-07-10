@@ -175,6 +175,9 @@
           <li>I try to keep updated my <a href="http://federicoponzi.link/linkedin">Linkedin</a> profile, so you can find my previous works and achivements there.</li>
         </ul>
 
+        <img src="https://projecteuler.net/profile/federicoponzi.png" alt="My projecteuler badge">
+
+
     </section>
     <section id="contacts" class="contacts">
         <h2 class="title">Let's get in touch!</h2>
