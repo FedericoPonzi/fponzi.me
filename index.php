@@ -97,8 +97,8 @@
                                 <p class="card-tags">#python #telegram #python-telegram-bot #bot #heroku #opensource</p>
                             </div>
                             <div class="card-block card-links">
-                              <a href="https://telegram.me/TransportiRomaBot" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
-                              <a href="https://github.com/FedericoPonzi/TrasnsportiRomaBot" class="card-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                              <a href="https://telegram.me/TrasportiRomaBot" class="card-link" title="Chat with TrasportiRomaBot on telegram"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
+                              <a href="https://github.com/FedericoPonzi/TrasportiRomaBot" class="card-link" title="See the code for the bot"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
                             </div>
                         </div>
                     </div>
