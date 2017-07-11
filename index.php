@@ -146,14 +146,13 @@
                         <div class="card w-90">
                             <img class="card-img-top img-fluid" src="img/projects/rankit.png" alt="RankIT">
                             <div class="card-block">
-                                <p class="card-text text-justify">RankIT is An Android (Material design) application made for my Scolarship with NYU:  Designing and developing an app for general purpose ranking of items from mathematical theory to the pratical realization, especially in app development procedure.</p>
+                                <p class="card-text text-justify">RankIT is An Android (Material design) application made for my Scolarship with NYU: Designing and developing an app for general purpose ranking of items from mathematical theory to the pratical realization, especially in app development procedure.</p>
                             </div>
                             <div class="card-block">
                                 <p class="card-tags">#android #java #material-design #scolarship #university</p>
                             </div>
                             <div class="card-block card-links">
-                                <a href="https://ld17.lugroma3.org" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
-                                <a href="#" class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i> Github soon!</a>
+                                <a href="https://play.google.com/store/apps/details?id=sapienza.informatica.rankit&hl=it" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Play store</a>
                             </div>
                         </div>
                     </div>
@@ -168,7 +167,7 @@
           <li>I have a Bachelor in Computer Science, and I'm pursuing MSC in Computer Science</li>
           <li>In my spare time I blog on informaticalab.com</li>
           <li>I know several programming languages, but I feel fluent in Java and Python.</li>
-          <li>I love everything related to computers and computer science</li>
+          <li>I love everything related to computers and computer science.</li>
           <li>I love learning</li>
           <li>Music is very important to me</li>
           <li>I try to live as healthy as I can</li>
@@ -203,7 +202,7 @@
                                     </li>
                                 </ul>
                                 <p>])<br>
-                                    <span style='color:#696969; '># Go ahead, copy-paste and run this script!<br>
+                                    <span style='color:#696969;'># Go ahead, copy-paste and run this script!<br>
                                     # federicoponzi.link/{social} it's a handy shortcut for my social profiles</span><br>
                                 </p>
                             </div>
@@ -213,23 +212,24 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-7 col-xl-6 text-left">
                     <p>Do you prefer emails? Fill the form below!</p>
-                    <form>
+                    <div id="status"></div>
+                    <form id="contactform" action="#" method="post">
                         <div class="form-group row">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control contacts-input contacts-input-text" id="inputPassword3" placeholder="Name">
+                                <input type="text" name="name" class="form-control contacts-input contacts-input-text" id="inputPassword3" placeholder="Name">
                             </div>
                             <div class="col-sm-6">
-                                <input type="email" class="form-control contacts-input contacts-input-text" id="email" placeholder="Email">
+                                <input type="email" name="email" class="form-control contacts-input contacts-input-text" id="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <textarea class="form-control contacts-input contacts-textarea" id="exampleTextarea" rows="6" placeholder="Insert your message"></textarea>
+                                <textarea name="message" class="form-control contacts-input contacts-textarea" rows="6" placeholder="Insert your message"></textarea>
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm-2 ">
-                                <button type="submit" class="btn btn-primary contacts-send">Contact me</button>
+                                <button id="submit" type="submit" class="btn btn-primary contacts-send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </form>
@@ -291,7 +291,6 @@
         var main = function() {
             new WOW().init();
             $('.hero').waypoint(function(direction) {
-                            console.log("dot");
                 if (direction === "down") {
                   if ($(document).scrollTop() > 2) {
                     onExitSection("top");
@@ -307,7 +306,6 @@
             });
 
             $('.portfolio').waypoint(function(direction) {
-              console.log("nop");
                 if (direction === "down") {
                     onExitSection("hero");
                     onEnterSection("portfolio");
@@ -317,7 +315,6 @@
                 }
             });
             $('.about').waypoint(function(direction) {
-              console.log("WOT");
                 if (direction === "down") {
                     onEnterSection("about");
                     onExitSection("portfolio");
@@ -363,11 +360,33 @@
                 loop: true,
                 loopCount: Infinity
             });
+
+            var contactform = $("#contactform");
+            var $inputs = contactform.find('input, textarea');
+            var $buttons = contactform.find('button');
+
+            contactform.submit(function(){
+              event.preventDefault();
+              $inputs.attr('readonly', 'readonly');
+              $buttons.attr('disabled', 'disabled');
+              var formData = new FormData(document.querySelector('form'));
+              console.log(formData);
+              var request = new XMLHttpRequest();
+              request.open("POST", "send-mail.php");
+              request.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  //Il server invia sempre 200
+                  document.getElementById("status").innerHTML = this.responseText
+                }
+                $inputs.attr('readonly', false);
+                $buttons.attr('disabled', false);
+              };
+              request.send(formData);
+            });
+
         };
         $(document).ready(main);
     </script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>
