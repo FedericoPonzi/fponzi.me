@@ -10,7 +10,7 @@ $message = $_POST['message'];
 $subject = "[fponzi.me] Nuovo contatto tramite form";
 $to = 'federico.ponzi92@gmail.com';
 
-$message = 'Ciao, qualcuno ha usato il form di contatti sulla pagina del ld2017 per inviare questa email.
+$message = 'Ciao, qualcuno ha usato il form di contatti su fponzi.me per inviare questa email.
 Nome : '.$name.'
 Email : '.$email.'
 
