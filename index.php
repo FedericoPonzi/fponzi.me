@@ -172,6 +172,7 @@
           <li>Music is very important to me</li>
           <li>I try to live as healthy as I can</li>
           <li>I try to keep updated my <a href="http://federicoponzi.link/linkedin">Linkedin</a> profile, so you can find my previous works and achivements there.</li>
+        <li>I use Linux for developing and Windows for playing. I'm a member of Rome's Linux User Group</li>
         </ul>
 
         <img src="https://projecteuler.net/profile/federicoponzi.png" alt="My projecteuler badge">
