@@ -28,16 +28,16 @@
         <div class="collapse navbar-collapse" id="menu-collapse">
             <ul class="navbar-nav mr-auto">
                 <li id="nav-home" class="nav-item">
-                    <a class="nav-link" href="#hero">Home</a>
+                    <a class="nav-link" href="#hero"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li id="nav-portfolio" class="nav-item">
-                    <a class="nav-link" href="#portfolio">Projects</a>
+                    <a class="nav-link" href="#portfolio"><i class="fa fa-list-alt"></i> Projects</a>
                 </li>
                 <li id="nav-about" class="nav-item">
-                    <a class="nav-link" href="#about">About me</a>
+                    <a class="nav-link" href="#about"><i class="fa fa-user-o"></i> About me</a>
                 </li>
                 <li id="nav-contacts" class="nav-item">
-                    <a class="nav-link" href="#contacts">Contacts</a>
+                    <a class="nav-link" href="#contacts"><i class="fa fa-envelope"></i> Contacts</a>
                 </li>
             </ul>
         </div>
@@ -113,7 +113,7 @@
                             </div>
                             <div class="card-block card-links">
                                 <a href="https://ld17.lugroma3.org" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
-                                <a href="#" class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i> Github soon!</a>
+                                <a href="#" class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/LUGRomaTre/ld2017">Github</a>
                             </div>
                         </div>
                     </div>
