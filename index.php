@@ -199,7 +199,9 @@
                                     <li class="social-item">
                                         <a href="http://federicoponzi.link/telegram"><img src="img/social/telegram.svg" width="24"> "telegram"</a>,</li>
                                     <li class="social-item">
-                                        <a href="http://federicoponzi.link/facebook"><img src="img/social/facebook.svg" width="24"> "facebook"</a>
+                                        <a href="http://federicoponzi.link/facebook"><img src="img/social/facebook.svg" width="24"> "facebook"</a>,</li>
+                                    <li class="social-item">
+                                        <a href="http://federicoponzi.link/medium"><img src="img/social/medium.svg" width="24"> "medium"</a>
                                     </li>
                                 </ul>
                                 <p>])<br>
