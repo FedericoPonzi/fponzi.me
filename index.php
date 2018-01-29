@@ -43,7 +43,7 @@
         </div>
       </div>
     </nav>
-
+    
     <section id="hero" class="hero">
         <div class="container">
             <!-- Hide, until i got a nice picture D: <img src="http://via.placeholder.com/350x150" class="img-fluid img-circle img-rounded">-->
@@ -167,7 +167,7 @@
           <li>I live in Rome, Italy.</li>
           <li>I have a Bachelor in Computer Science at La Sapienza University, and I'm pursuing MSC in CS</li>
           <li>In my spare time I blog at <a href="http://informaticalab.com">informaticalab.com</a></li>
-          <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, I've made stuff in: Bash, Go, Assembly, C, PHP, Javascript, ML, Swift.</li>
+          <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, <br> I've made stuff in: Bash, Go, Assembly, C, PHP, Javascript, ML, Swift.</li>
           <li>I love everything related to computers, internet and computer science.</li>
           <li>I love learning. I usually try to follow at least 1 course on coursera/edx per semester.</li>
           <li>Area of interest: Software development, Distributed Systems, Big Data, Cloud computing, Security.</li>
@@ -259,6 +259,7 @@
           if(sect === "top"){
             $("#menu").addClass("hero");
             $("#menu").removeClass("navbar-shadow");
+            console.log("Mezzo che top");
           }
           if(sect === "hero"){
             $("#menu").addClass("hero-navbar navbar-shadow");
@@ -295,9 +296,9 @@
 
         var main = function() {
             new WOW().init();
-            $('.hero').waypoint(function(direction) {
-                if (direction === "down") {
-                  if ($(document).scrollTop() > 2) {
+            $('#hero').waypoint(function(direction) {
+                if(direction== "down"){
+                  if ($(document).scrollTop() > $('#hero').offset().top) {
                     onExitSection("top");
                     onEnterSection("hero");
                   }else{
@@ -310,7 +311,7 @@
                 }
             });
 
-            $('.portfolio').waypoint(function(direction) {
+            $('#portfolio').waypoint(function(direction) {
                 if (direction === "down") {
                     onExitSection("hero");
                     onEnterSection("portfolio");
@@ -319,7 +320,7 @@
                     onExitSection("portfolio");
                 }
             });
-            $('.about').waypoint(function(direction) {
+            $('#about').waypoint(function(direction) {
                 if (direction === "down") {
                     onEnterSection("about");
                     onExitSection("portfolio");
@@ -329,7 +330,7 @@
                 }
             });
 
-            $('.contacts').waypoint(function(direction) {
+            $('#contacts').waypoint(function(direction) {
                 if (direction === "down") {
                     onEnterSection("contacts");
                     onExitSection("about");
