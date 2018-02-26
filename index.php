@@ -357,7 +357,13 @@ var main = function() {
 			onExitSection("contacts");
 		}
 	});
-
+	$(document).click(function (event) {
+         var clickover = $(event.target);
+         var _opened = $(".navbar-collapse").hasClass("show");
+         if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+             $(".navbar-toggler").click();
+         }
+     });
 	$(document).on('click', 'a[href^="#"]', function(e) {
 		// target element id
 		var id = $(this).attr('href');
