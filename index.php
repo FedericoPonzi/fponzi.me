@@ -18,7 +18,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#menu">
-<nav id="menu" class="navbar navbar-dark navbar-expand-lg fixed-top custom-navbar hero">
+<nav id="menu" class="navbar navbar-dark navbar-expand-lg navbar-expand-md fixed-top custom-navbar hero">
 	<div class="container">
 	  <a class="navbar-brand" href="#">Federico Ponzi</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -156,7 +156,7 @@
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.45s">
 							<img class="card-img-top img-fluid" src="img/projects/immobiliare-logo.png" alt="Immobiliare logo">
 							<div class="card-body">
-								<p class="card-text text-justify">I've developed from scratch, a Big Data Lake for Immobiliare.it (biggest real estate ads website in Italy). I've studied all the market available solution (open-soruce and paid), and developed a new system top-down: from writing the documentation for the system, to setup a cluster of three nodes. I've also create the web frontend and a REST API to access the system outside the office boundary.</p>
+								<p class="card-text text-justify">I've developed from scratch, a Big Data Lake for Immobiliare.it (biggest real estate ads website in Italy). I've studied all the market available solutions (open-source and paid), and developed a new system top-down: from writing the documentation for the system, to setup a cluster of three nodes. I've also created the web frontend and a REST API to access the system outside the office boundary.</p>
 								<p class="card-tags">#bigdata #linux #spark #python #golang #angular #html5</p>
 							</div>
 						</div>
@@ -199,7 +199,7 @@
 
 
 	</section>
-	<section id="contacts" class="contacts">
+	<section id="contacts" class="contacts" style="padding-left:0px; padding-right:0px; ">
 		<h2 class="title">Let's get in touch!</h2>
 		<div class="container">
 			<div class="row">
@@ -358,12 +358,12 @@ var main = function() {
 		}
 	});
 	$(document).click(function (event) {
-         var clickover = $(event.target);
-         var _opened = $(".navbar-collapse").hasClass("show");
-         if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-             $(".navbar-toggler").click();
-         }
-     });
+		var clickover = $(event.target);
+		var _opened = $(".navbar-collapse").hasClass("show");
+		if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+			$(".navbar-toggler").click();
+		}
+	});
 	$(document).on('click', 'a[href^="#"]', function(e) {
 		// target element id
 		var id = $(this).attr('href');
