@@ -18,32 +18,33 @@
 </head>
 
 <body data-spy="scroll" data-target="#menu">
-	<nav id="menu" class="navbar navbar-right navbar-toggleable-md fixed-top navbar-inverse custom-navbar hero">
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-collapse" aria-controls="menu-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<nav id="menu" class="navbar navbar-dark navbar-expand-lg fixed-top custom-navbar hero">
+	<div class="container">
+	  <a class="navbar-brand" href="#">Federico Ponzi</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
-	  <div class="container">
-		<a class="navbar-brand" href="#">fponzi.me</a>
 
-		<div class="collapse navbar-collapse" id="menu-collapse">
-			<ul class="navbar-nav mr-auto">
-				<li id="nav-home" class="nav-item">
-					<a class="nav-link" href="#hero"><i class="fa fa-home"></i> Home</a>
-				</li>
-				<li id="nav-portfolio" class="nav-item">
-					<a class="nav-link" href="#portfolio"><i class="fa fa-list-alt"></i> Projects</a>
-				</li>
-				<li id="nav-about" class="nav-item">
-					<a class="nav-link" href="#about"><i class="fa fa-user-o"></i> About me</a>
-				</li>
-				<li id="nav-contacts" class="nav-item">
-					<a class="nav-link" href="#contacts"><i class="fa fa-envelope"></i> Contacts</a>
-				</li>
-			</ul>
-		</div>
-	  </div>
-	</nav>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+		<ul class="navbar-nav mr-auto">
+					<li id="nav-home" class="nav-item">
+						<a class="nav-link" href="#hero"><i class="fa fa-home"></i> Home</a>
+					</li>
+					<li id="nav-portfolio" class="nav-item">
+						<a class="nav-link" href="#portfolio"><i class="fa fa-list-alt"></i> Projects</a>
+					</li>
+					<li id="nav-about" class="nav-item">
+						<a class="nav-link" href="#about"><i class="fa fa-user-o"></i> About me</a>
+					</li>
+					<li id="nav-contacts" class="nav-item">
+						<a class="nav-link" href="#contacts"><i class="fa fa-envelope"></i> Contacts</a>
+					</li>
+
+		</ul>
+	</div>
+  </div>
+</nav>
 	<section class="hero">
 		<div class="container" id="hero">
 			<!-- Hide, until i got a nice picture D: <img src="http://via.placeholder.com/350x150" class="img-fluid img-circle img-rounded">-->
@@ -72,7 +73,7 @@
 		<p>Check out some of my projects! I strongly believe in Open Source. When possible, all the work I do is released on my Github account.</p>
 			<div class="container">
 				<div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3" data-wow-delay="0.6s">
+					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3" data-wow-delay="0.6s">
 
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.15s">
 							<img class="card-img-top" src="img/projects/sopsi.webp" alt="SOPSI logo">
@@ -85,8 +86,8 @@
 								<a href="https://play.google.com/store/apps/details?id=it.vir_us.sopsi&hl=it" class="card-link"><i class="fa fa-github"  aria-hidden="true"></i> Play Store</a>
 							</div>
 						</div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.2s">
 							<img class="card-img-top" src="img/projects/isitdown.png" alt="Isitdown.site">
 							<div class="card-body">
@@ -98,8 +99,8 @@
 								<a href="https://github.com/FedericoPonzi/isitdown.site" class="card-link"><i class="fa fa-github"  aria-hidden="true"></i> Github</a>
 							</div>
 						</div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
 
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.25s">
 							<img class="card-img-top img-fluid" src="img/projects/TrasportiRomaBot.png" alt="TrasportiRomaBot">
@@ -112,8 +113,8 @@
 							  <a href="https://github.com/FedericoPonzi/TrasportiRomaBot" class="card-link" title="See the code for the bot"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
 							</div>
 						</div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
 
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.30s">
 							<img class="card-img-top img-fluid" src="img/projects/linux-day-2017.png" alt="Linux day 2017 Rome">
@@ -126,8 +127,8 @@
 								<a href="#" class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/LUGRomaTre/ld2017">Github</a>
 							</div>
 						</div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
 
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.35s">
 							<img class="card-img-top img-fluid" style="background-color:black;" src="img/projects/versah-italy.png" alt="Versah-Italy">
@@ -139,8 +140,8 @@
 								<a href="#" class="card-link" title="Versah Italy"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site (no more online)</a>
 							</div>
 						</div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
 
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.40s">
 							<img class="card-img-top img-fluid" src="img/projects/vype.jpg" alt="Vype">
@@ -149,8 +150,8 @@
 								<p class="card-tags">#android #tablet #firebase</p>
 							</div>
 						</div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
 
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.45s">
 							<img class="card-img-top img-fluid" src="img/projects/immobiliare-logo.png" alt="Immobiliare logo">
@@ -159,8 +160,8 @@
 								<p class="card-tags">#bigdata #linux #spark #python #golang #angular #html5</p>
 							</div>
 						</div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
 
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.50s">
 							<img class="card-img-top img-fluid" src="img/projects/rankit.png" alt="RankIT">
