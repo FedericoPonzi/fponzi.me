@@ -181,7 +181,7 @@
 	<section id="about" class="about">
 	  <h2 class="title">About me</h2>
 	  <p>Some fast news about me:</p>
-		<ul>
+		<ul style="padding:0px">
 		  <li>I live in Rome, Italy.</li>
 		  <li>I have a Bachelor in Computer Science at La Sapienza University, and I'm pursuing MSC in CS</li>
 		  <li>In my spare time I blog at <a href="http://informaticalab.com">informaticalab.com</a></li>
