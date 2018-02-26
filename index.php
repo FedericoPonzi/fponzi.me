@@ -185,14 +185,14 @@
 		  <li>I live in Rome, Italy.</li>
 		  <li>I have a Bachelor in Computer Science at La Sapienza University, and I'm pursuing MSC in CS</li>
 		  <li>In my spare time I blog at <a href="http://informaticalab.com">informaticalab.com</a></li>
-		  <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, <br> I've made stuff in: Bash, Go, Assembly, C, PHP, Javascript, ML, Swift.</li>
+		  <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, <br> I've made stuff in: Bash, Go, Assembly, C, PHP, Javascript, Typescript, ML, Swift.</li>
 		  <li>I love everything related to computers, internet and computer science.</li>
 		  <li>I love learning. I usually try to follow at least 1 course on coursera/edx per semester.</li>
 		  <li>Area of interest: Software development, Distributed Systems, Big Data, Cloud computing, Security.</li>
 		  <li>Music is very important to me. I like to listen to music while developing.</li>
 		  <li>I try to live as healthy as I can, going gym three times a week and doing diet to keep me fit.</li>
 		  <li>I try to keep updated my <a href="http://federicoponzi.link/linkedin">Linkedin</a> profile, so you can find my previous works and achivements there.</li>
-		<li>I use Linux for developing and Windows for playing. I'm a member of Rome's Linux User Group</li>
+		  <li>I use Linux for developing and Windows for playing. I'm a member of Rome's Linux User Group</li>
 		</ul>
 
 		<img src="https://projecteuler.net/profile/federicoponzi.png" alt="My projecteuler badge">
