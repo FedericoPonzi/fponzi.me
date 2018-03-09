@@ -16,7 +16,7 @@ Email : '.$email.'
 
 Messaggio : '.$message;
 
-$headers = "From: ".$name." <".$email.">\r\n"
+$headers = "From: ".$name." <noreply@fponzi.me>\r\n"
 ."Reply-To: ".$email."\r\n";
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) { // this line checks that we have a valid email address
