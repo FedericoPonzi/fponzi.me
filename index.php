@@ -226,7 +226,7 @@
 								</ul>
 								<p>])<br>
 									<span style='color:#696969;'># Go ahead, copy-paste and run this script!<br>
-									# federicoponzi.link/{social} it's a handy shortcut for my social profiles</span><br>
+									# federicoponzi.link/{social} it's an handy shortcut for my social profiles</span><br>
 								</p>
 							</div>
 						</div>
@@ -234,7 +234,7 @@
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-7 col-xl-6 text-left">
-					<p>Do you prefer emails? Fill the form below!</p>
+					<p>Do you prefer emails?</p>
 					<div id="status"></div>
 					<form id="contactform" action="#" method="post">
 						<div class="form-group row">
