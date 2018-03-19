@@ -11,13 +11,15 @@ $subject = "[fponzi.me] Nuovo contatto tramite form";
 $to = 'federico.ponzi92@gmail.com';
 
 $message = 'Ciao, qualcuno ha usato il form di contatti su fponzi.me per inviare questa email.
-Nome : '.$name.'
-Email : '.$email.'
-
+Nome : '.$name.'<br>
+Email : '.$email.'<br>
+<br><br>
 Messaggio : '.$message;
 
 $headers = "From: ".$name." <noreply@fponzi.me>\r\n"
 ."Reply-To: ".$email."\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) { // this line checks that we have a valid email address
 	$mail = mail($to, $subject, $message, $headers);
