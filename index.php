@@ -1,3 +1,31 @@
+<?php
+	function get_social($query){
+		switch($query){
+			case "facebook":
+				return "https://www.facebook.com/federico.ponzi.5";
+			case "twitter":
+				return "https://twitter.com/federico_ponzi";
+			case "linkedin":
+				return "https://www.linkedin.com/in/federicoponzi/";
+			case "github":
+				return "https://github.com/FedericoPonzi";
+			case "telegram":
+				return "https://telegram.me/FedericoPonzi";
+			case "medium":
+				return "https://medium.com/@federico_ponzi";
+			case "hackernews":
+				return "https://news.ycombinator.com/user?id=federicoponzi";
+		}
+		return NULL;
+	}
+	if(isset($_GET['q'])){
+		$social = get_social($_GET['q']);
+		if($social != NULL){
+			header("location: ". $social);
+			exit;
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,7 +85,8 @@
 			<div class="card text-center">
 				<div class="card-body">
 					<h4 class="card-title">What I'm working on right now</h4>
-					<p class="card-text"><?php include "what.txt" ?></p>
+					<p class="card-text">
+					<?php include "what.txt" ?></p>
 				</div>
 				<!-- It's on the todo list  c':
 				  <div class="card-footer text-muted">
@@ -191,7 +220,7 @@
 		  <li>Area of interest: Software development, Distributed Systems, Big Data, Cloud computing, Security.</li>
 		  <li>Music is very important to me. I like to listen to music while developing.</li>
 		  <li>I try to live as healthy as I can, going gym three times a week and doing diet to keep me fit.</li>
-		  <li>I try to keep updated my <a href="http://federicoponzi.link/linkedin">Linkedin</a> profile, so you can find my previous works and achivements there.</li>
+		  <li>I try to keep updated my <a href="https://fponzi.me/linkedin">Linkedin</a> profile, so you can find my previous works and achivements there.</li>
 		  <li>I use Linux for developing and Windows for playing. I'm a member of Rome's Linux User Group</li>
 		</ul>
 
@@ -207,27 +236,31 @@
 					<div class="card">
 						<div class="card-body">
 							<div class="social text-left">
-								<p><span style='color:#696969; '>#!/usr/bin/python3</span><br> map(
-									<span style='color:#800000; font-weight:bold; '>lambda</span> social : <span style='color:#800000; font-weight:bold; '>print</span>("http://federicoponzi.link/" + social), [</p>
+<span style="color:#00b418">#!/usr/bin/python3</span><br>
+social <span style="color:#0100b6;font-weight:700">=</span> [ 
 								<ul>
 									<li class="social-item">
-										<a href="http://federicoponzi.link/linkedin"><img src="img/social/linkedin.svg" width="24"> "linkedin"</a>,</li>
+										<a href="https://fponzi.me/facebook"><img src="img/social/facebook.svg" width="24"> "facebook"</a>,</li>
 									<li class="social-item">
-										<a href="http://federicoponzi.link/github"><img src="img/social/github.svg" width="24"> "github"</a>,</li>
+										<a href="https://fponzi.me/github"><img src="img/social/github.svg" width="24"> "github"</a>,</li>
 									<li class="social-item">
-										<a href="http://federicoponzi.link/twitter"><img src="img/social/twitter.svg" width="24"> "twitter"</a>,</li>
+										<a href="http://fponzi.me/hackernews"><img src="img/social/hackernews.svg" width="24"> "hackernews"</a>,</li>
 									<li class="social-item">
-										<a href="http://federicoponzi.link/telegram"><img src="img/social/telegram.svg" width="24"> "telegram"</a>,</li>
+										<a href="https://fponzi.me/linkedin"><img src="img/social/linkedin.svg" width="24"> "linkedin"</a>,</li>
 									<li class="social-item">
-										<a href="http://federicoponzi.link/facebook"><img src="img/social/facebook.svg" width="24"> "facebook"</a>,</li>
+										<a href="https://fponzi.me/medium"><img src="img/social/medium.svg" width="24"> "medium"</a>,</li>
 									<li class="social-item">
-										<a href="http://federicoponzi.link/medium"><img src="img/social/medium.svg" width="24"> "medium"</a>
-									</li>
+										<a href="https://fponzi.me/telegram"><img src="img/social/telegram.svg" width="24"> "telegram"</a>,</li>
+									<li class="social-item">
+										<a href="https://fponzi.me/twitter"><img src="img/social/twitter.svg" width="24"> "twitter"</a></li>
 								</ul>
-								<p>])<br>
-									<span style='color:#696969;'># Go ahead, copy-paste and run this script!<br>
-									# federicoponzi.link/{social} it's an handy shortcut for my social profiles</span><br>
-								</p>
+]<br>
+<pre class="social" style="font-size: inherit">
+<span style="color:#0100b6;font-weight:700">for</span> s <span style="color:#0100b6;font-weight:700">in</span> social:
+    <span style="color:#0100b6;font-weight:700">print</span>(<span style="color:#d80800">"http://fponzi.me/"</span> <span style="color:#0100b6;font-weight:700">+</span> s)
+</pre><br>
+<span style="color:#00b418"># Go ahead, copy-paste and run this script!</span><br>
+<span style="color:#00b418"># federicoponzi.link/{social} it's an handy shortcut for my social profiles</span>
 							</div>
 						</div>
 					</div>
