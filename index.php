@@ -83,6 +83,7 @@
 			<div class="row">
 			  <div class="offset-md-3 col-md-6">
 			<div class="card text-center">
+<div style="width: 20px;height: 20px;background-color: #eeff48;border-radius: 14px;box-shadow: 4px 2px 1px -1px rgba(0, 0, 0, 0.44);margin-top: 2px;margin-left: 2px;"></div>
 				<div class="card-body">
 					<h4 class="card-title">What I'm working on right now</h4>
 					<p class="card-text">
