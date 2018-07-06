@@ -106,7 +106,7 @@
 					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3" data-wow-delay="0.6s">
 
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.15s">
-							<img class="card-img-top" src="img/projects/sopsi.webp" alt="SOPSI logo">
+							<img class="card-img-top" src="img/projects/sopsi.jpg" alt="SOPSI logo">
 							<div class="card-body">
 								<p class="card-text text-justify">This is the official app for the XXII national congress of the italian society of psychopathology (SOPSI). I've made an hybrid app for iOS and Android using the latest version of Ionic (Angular).</p>
 								<p class="card-tags">#android #ios #ionic #typescript #angular #html5 #css3</p>
