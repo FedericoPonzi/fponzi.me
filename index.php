@@ -258,10 +258,10 @@ social <span style="color:#0100b6;font-weight:700">=</span> [
 ]<br>
 <pre class="social" style="font-size: inherit">
 <span style="color:#0100b6;font-weight:700">for</span> s <span style="color:#0100b6;font-weight:700">in</span> social:
-    <span style="color:#0100b6;font-weight:700">print</span>(<span style="color:#d80800">"http://fponzi.me/"</span> <span style="color:#0100b6;font-weight:700">+</span> s)
+    <span style="color:#0100b6;font-weight:700">print</span>(<span style="color:#d80800">"https://fponzi.me/"</span> <span style="color:#0100b6;font-weight:700">+</span> s)
 </pre><br>
 <span style="color:#00b418"># Go ahead, copy-paste and run this script!</span><br>
-<span style="color:#00b418"># fponzi.me/{social} it's an handy shortcut for my social profiles</span>
+<span style="color:#00b418"># https://fponzi.me/{social} it's an handy shortcut for my social profiles</span>
 							</div>
 						</div>
 					</div>
