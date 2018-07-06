@@ -261,14 +261,13 @@ social <span style="color:#0100b6;font-weight:700">=</span> [
     <span style="color:#0100b6;font-weight:700">print</span>(<span style="color:#d80800">"http://fponzi.me/"</span> <span style="color:#0100b6;font-weight:700">+</span> s)
 </pre><br>
 <span style="color:#00b418"># Go ahead, copy-paste and run this script!</span><br>
-<span style="color:#00b418"># federicoponzi.link/{social} it's an handy shortcut for my social profiles</span>
+<span style="color:#00b418"># fponzi.me/{social} it's an handy shortcut for my social profiles</span>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-7 col-xl-6 text-left">
-					<p>Do you prefer emails?</p>
 					<div id="status"></div>
 					<form id="contactform" action="#" method="post">
 						<div class="form-group row">
