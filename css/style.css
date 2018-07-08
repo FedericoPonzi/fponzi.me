@@ -79,6 +79,9 @@ section{
 .portfolio{
   background-color: #1E88E5;
 }
+.portfolio p a {
+	background-color:#d7dfff;
+}
 .portfolio-navbar{
   background-color: #1565C0;
 }

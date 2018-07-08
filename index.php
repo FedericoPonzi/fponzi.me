@@ -100,7 +100,7 @@
 
 	<section id="portfolio" class="portfolio">
 		<h2 class="title">Some of my projects</h2>
-		<p>Check out some of my projects! I strongly believe in Open Source. When possible, all the work I do is released on my Github account.</p>
+		<p>When possible, all the work I do is released on my <a href="https://github.com/FedericoPonzi/">Github account</a>. Also, please notice: this is not a complete list, you can dig more in my <a href="https://github.com/FedericoPonzi/">Github account</a></p>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3" data-wow-delay="0.6s">
