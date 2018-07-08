@@ -186,8 +186,8 @@
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.45s">
 							<img class="card-img-top img-fluid" src="img/projects/immobiliare-logo.png" alt="Immobiliare logo">
 							<div class="card-body">
-								<p class="card-text text-justify">I've developed from scratch, a Big Data Lake for Immobiliare.it (biggest real estate ads website in Italy). I've studied all the market available solutions (open-source and paid), and developed a new system top-down: from writing the documentation for the system, to setup a cluster of three nodes. I've also created the web frontend and a REST API to access the system outside the office boundary.</p>
-								<p class="card-tags">#bigdata #linux #spark #python #golang #angular #html5</p>
+								<p class="card-text text-justify">I've developed from scratch, a <strong>Big Data Lake</strong> for Immobiliare.it (biggest real estate ads website in Italy). I've studied all the market available solutions (open-source and paid), and developed a new system using Spark. I've also created the web frontend, scripts to daily integrate the databases snapshosts in the Data Lake and a REST API to access the system outside the office DMZ.</p>
+								<p class="card-tags">#bigdata #spark #python #golang #angular #html5 #linux</p>
 							</div>
 						</div>
 					</div>
@@ -196,7 +196,7 @@
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.50s">
 							<img class="card-img-top img-fluid" src="img/projects/rankit.png" alt="RankIT">
 							<div class="card-body">
-								<p class="card-text text-justify">RankIT is An Android (Material design) application made for my Scolarship with New York University: Designing and developing an app for general purpose ranking of items from mathematical theory to the pratical realization, especially in app development procedure.</p>
+								<p class="card-text text-justify">RankIT is an Android (Material design) application made for my Scolarship with <strong>New York University</strong>: Designing and developing an app for general purpose ranking of items from mathematical theory to the pratical realization, especially in app development procedure.</p>
 								<p class="card-tags">#android #java #material-design #scolarship #university</p>
 							</div>
 							<div class="card-footer">
