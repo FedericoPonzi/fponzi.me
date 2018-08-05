@@ -1,8 +1,6 @@
 <?php
 	function get_social($query){
 		switch($query){
-			case "facebook":
-				return "https://www.facebook.com/federico.ponzi.5";
 			case "twitter":
 				return "https://twitter.com/federico_ponzi";
 			case "linkedin":
@@ -240,9 +238,7 @@
 <span style="color:#00b418">#!/usr/bin/python3</span><br>
 social <span style="color:#0100b6;font-weight:700">=</span> [ 
 								<ul>
-									<li class="social-item">
-										<a href="https://fponzi.me/facebook"><img src="img/social/facebook.svg" width="24"> "facebook"</a>,</li>
-									<li class="social-item">
+								<li class="social-item">
 										<a href="https://fponzi.me/github"><img src="img/social/github.svg" width="24"> "github"</a>,</li>
 									<li class="social-item">
 										<a href="http://fponzi.me/hackernews"><img src="img/social/hackernews.svg" width="24"> "hackernews"</a>,</li>
