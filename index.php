@@ -133,7 +133,7 @@
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.25s">
 							<img class="card-img-top img-fluid" src="img/projects/TrasportiRomaBot.png" alt="TrasportiRomaBot">
 							<div class="card-body">
-								<p class="card-text text-justify">This is a Telegram bot, made with python-telegram-bot APIs, to check timetables of the Atac's busses (Rome) and other info.</p>
+								<p class="card-text text-justify">This is a Telegram bot to check timetables of the Atac(Rome)'s public transport and other info.</p>
 								<p class="card-tags">#python #telegram #python-telegram-bot #bot #heroku #opensource</p>
 							</div>
 							<div class="card-footer">
