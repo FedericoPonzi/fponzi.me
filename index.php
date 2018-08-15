@@ -13,6 +13,11 @@
 				return "https://medium.com/@federico_ponzi";
 			case "hackernews":
 				return "https://news.ycombinator.com/user?id=federicoponzi";
+			case "introduction-to-linux-certificate":
+				return "https://s3.amazonaws.com/verify.edx.org/downloads/5eb95ba0d2c44f13a5d69448018e71d1/Certificate.pdf";
+			case "html5-by-w3c-certificate":
+				return "https://s3.amazonaws.com/verify.edx.org/downloads/0dd099b1c51f420e8793096f55872be5/Certificate.pdf";
+
 		}
 		return NULL;
 	}
