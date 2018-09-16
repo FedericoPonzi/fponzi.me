@@ -157,7 +157,7 @@
 							</div>
 							<div class="card-footer">
 								<a href="https://ld17.lugroma3.org" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
-								<a href="#" class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/LUGRomaTre/ld2017">Github</a>
+								<a href="https://github.com/LUGRomaTre/ld2017   " class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
 							</div>
 						</div>
 					</div>
@@ -451,6 +451,12 @@ var main = function() {
 };
 $(document).ready(main);
 </script>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400" rel="stylesheet">
+
+
 </body>
 
 </html>
