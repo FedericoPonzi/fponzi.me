@@ -42,10 +42,10 @@
 	<title>Federico Ponzi</title>
 
 	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
-	<link href="css/font-awesome.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
-	<link href="css/animate.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
-	<link href="css/style.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#menu">
