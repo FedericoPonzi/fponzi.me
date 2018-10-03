@@ -218,7 +218,7 @@
 		  <li>I live in Rome, Italy.</li>
 		  <li>I have a Bachelor in Computer Science at La Sapienza University, and I'm pursuing MSC in CS</li>
 		  <li>In my spare time I blog at <a href="http://informaticalab.com">informaticalab.com</a></li>
-		  <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, <br> I've made stuff in: Bash, Go, Assembly, C, PHP, Javascript, Typescript, ML, Swift.</li>
+		  <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, <br> I've also made stuff in: Bash, Go, Assembly, C, PHP, Javascript, Typescript, ML, Swift.</li>
 		  <li>I love everything related to computers, internet and computer science.</li>
 		  <li>I love learning. I usually try to follow at least 1 course on coursera/edx per semester.</li>
 		  <li>Area of interest: Software development, Distributed Systems, Big Data, Cloud computing, Security.</li>
