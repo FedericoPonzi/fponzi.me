@@ -1,4 +1,5 @@
 RewriteEngine on
+RewriteCond %{HTTP_HOST} ^fponzi.me$ 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /index.php?q=$1 [L,QSA]
@@ -18,4 +19,3 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
-
