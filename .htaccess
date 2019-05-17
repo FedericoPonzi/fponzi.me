@@ -3,7 +3,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /index.php?q=$1 [L,QSA]
 
-ErrorDocument 404 https://fponzi.me/index.php
+#ErrorDocument 404 https://fponzi.me/index.php
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresByType image/jpg "access 1 year"

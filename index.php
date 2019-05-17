@@ -1,25 +1,16 @@
 <?php
 	function get_social($query){
-		switch($query){
-			case "twitter":
-				return "https://twitter.com/federico_ponzi";
-			case "linkedin":
-				return "https://www.linkedin.com/in/federicoponzi/";
-			case "github":
-				return "https://github.com/FedericoPonzi";
-			case "telegram":
-				return "https://telegram.me/FedericoPonzi";
-			case "medium":
-				return "https://medium.com/@federico_ponzi";
-			case "hackernews":
-				return "https://news.ycombinator.com/user?id=federicoponzi";
-			case "introduction-to-linux-certificate":
-				return "https://s3.amazonaws.com/verify.edx.org/downloads/5eb95ba0d2c44f13a5d69448018e71d1/Certificate.pdf";
-			case "html5-by-w3c-certificate":
-				return "https://s3.amazonaws.com/verify.edx.org/downloads/0dd099b1c51f420e8793096f55872be5/Certificate.pdf";
-
-		}
-		return NULL;
+	    $social = array ("twitter" => "https://twitter.com/federico_ponzi",
+    	    			"linkedin" => "https://www.linkedin.com/in/federicoponzi/",
+                        "github"=> "https://github.com/FedericoPonzi",
+                        "telegram"=> "https://telegram.me/FedericoPonzi",
+                        "medium"=> "https://medium.com/@federico_ponzi",
+                        "hackernews"=> "https://news.ycombinator.com/user?id=federicoponzi",
+                        "introduction-to-linux-certificate"=> "https://s3.amazonaws.com/verify.edx.org/downloads/5eb95ba0d2c44f13a5d69448018e71d1/Certificate.pdf",
+                        "html5-by-w3c-certificate"=> "https://s3.amazonaws.com/verify.edx.org/downloads/0dd099b1c51f420e8793096f55872be5/Certificate.pdf");
+        if(array_key_exists($query, $social))
+            return $social[$query];
+        return null;
 	}
 	if(isset($_GET['q'])){
 		$social = get_social($_GET['q']);
@@ -71,33 +62,34 @@
 					<li id="nav-contacts" class="nav-item">
 						<a class="nav-link" href="#contacts"><i class="fa fa-envelope"></i> Contacts</a>
 					</li>
-
 		</ul>
 	</div>
   </div>
 </nav>
 	<section class="hero">
 		<div class="container" id="hero">
-			<!-- Hide, until i got a nice picture D: <img src="http://via.placeholder.com/350x150" class="img-fluid img-circle img-rounded">-->
+			<!-- Hidden, until i got a nice picture D: <img src="http://via.placeholder.com/350x150" class="img-fluid img-circle img-rounded">-->
 			<h1 class="intro-title">Hello, I'm Federico Ponzi</h1>
 			<p><span id="whoami" class="whoami"></span><span class="typed-cursor"></span></p>
 			<a href="#portfolio" type="button" class="btn btn-outline-primary custom-btn-primary">Show me the cool stuff</a>
 			<div class="divider" style="margin:2em 0;"></div>
 			<div class="row">
 			  <div class="offset-md-3 col-md-6">
-			<div class="card text-center">
-<div style="width: 20px;height: 20px;background-color: #eeff48;border-radius: 14px;box-shadow: 4px 2px 1px -1px rgba(0, 0, 0, 0.44);margin-top: 2px;margin-left: 2px;"></div>
-				<div class="card-body">
-					<h4 class="card-title">What I'm working on right now</h4>
-					<p class="card-text">
-					<?php include "what.txt" ?></p>
-				</div>
+			    <div class="card text-center">
+                    <div style="width: 20px;height: 20px;background-color: #eeff48;border-radius: 14px;box-shadow: 4px 2px 1px -1px rgba(0, 0, 0, 0.44);margin-top: 2px;margin-left: 2px;"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">What I'm working on right now</h4>
+                        <p class="card-text">
+                        <?php include "what.txt" ?></p>
+                    </div>
 				<!-- It's on the todo list  c':
 				  <div class="card-footer text-muted">
 					2 days ago
 				</div>-->
-			</div>
-		</div>
+	        		</div>
+                 </div>
+            </div>
+        </div>
 		<!-- /.container -->
 	</section>
 
@@ -157,7 +149,7 @@
 							</div>
 							<div class="card-footer">
 								<a href="https://ld17.lugroma3.org" class="card-link" title="Visit the ld17 website"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
-								<a href="https://github.com/LUGRomaTre/ld2017   " class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+								<a href="https://github.com/LUGRomaTre/ld2017" class="card-link" title="Github"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
 							</div>
 						</div>
 					</div>
@@ -216,19 +208,20 @@
 	  <p>Some fast news about me:</p>
 		<ul style="padding:0px">
 		  <li>I live in Rome, Italy.</li>
-		  <li>I have a Bachelor in Computer Science at La Sapienza University, and I'm pursuing MSC in CS</li>
-		  <li>In my spare time I blog at <a href="http://informaticalab.com">informaticalab.com</a></li>
-		  <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, <br> I've also made stuff in: Bash, Go, Assembly, C, PHP, Javascript, Typescript, ML, Swift.</li>
-		  <li>I love everything related to computers, internet and computer science.</li>
+		  <li>I have an MSc in Computer Science from La Sapienza University of Rome.</li>
+          <li>I work as a Distributed Systems Engineer at <a href="https://actyx.io">Actyx</a>. And I love it!</li>
+		  <li>In my spare time I blog at <a href="https://informaticalab.com">informaticalab.com</a></li>
+		  <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, <br> I've also made stuff in: Bash, Go, Assembly, C, PHP, Javascript, Typescript, SML, Swift, Scala.</li>
+		  <li>I love everything related to Computer Science.</li>
 		  <li>I love learning. I usually try to follow at least 1 course on coursera/edx per semester.</li>
-		  <li>Area of interest: Software development, Distributed Systems, Big Data, Cloud computing, Security.</li>
-		  <li>Music is very important to me. I like to listen to music while developing.</li>
+		  <li>Area of interest: Software development, Distributed Systems, Cloud computing, Security, Big Data.</li>
+		  <li>Music is a very important part of my life. I like to listen to music while developing.</li>
 		  <li>I try to live as healthy as I can, going gym three times a week and doing diet to keep me fit.</li>
 		  <li>I try to keep updated my <a href="https://fponzi.me/linkedin">Linkedin</a> profile, so you can find my previous works and achivements there.</li>
-		  <li>I use Linux for developing and Windows for playing. I'm a member of Rome's Linux User Group</li>
+		  <li>I use Linux for developing and Windows for playing. I like to use the right tool for the job :)</li>
 		</ul>
 
-		<img src="https://projecteuler.net/profile/federicoponzi.png" alt="My projecteuler badge">
+		<img src="https://projecteuler.net/profile/federicoponzi.png" alt="My ProjectEuler badge">
 
 
 	</section>
