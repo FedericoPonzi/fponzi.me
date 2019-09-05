@@ -88,6 +88,9 @@ section{
 .about-navbar{
   background-color: #C62828;
 }
+.about ul li a {
+  color: #075cb7;
+}
 .contacts{
   background-color: #757575;
 }

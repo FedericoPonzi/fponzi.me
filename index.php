@@ -171,8 +171,8 @@
 						<div class="card w-90 wow fadeInUp" data-wow-delay="0.40s">
 							<img class="card-img-top img-fluid" src="img/projects/vype.jpg" alt="Vype">
 							<div class="card-body">
-								<p class="card-text text-justify">I've made an Android app for a famous e-cigarette brand Vype spa. Sadly the app was for an internal use.</p>
-								<p class="card-tags">#android #tablet #firebase</p>
+								<p class="card-text text-justify">I've made an Android app for a famous e-cigarette brand Vype spa. It was deployed on tablets on totems and was used to collect opinions from Vype's customers. It used firebase offline capabilities, to store the data and sync to the backend as soon as back online. </p>
+								<p class="card-tags">#android #tablet #java #firebase</p>
 							</div>
 						</div>
 					</div>
@@ -205,7 +205,6 @@
 	</section>
 	<section id="about" class="about">
 	  <h2 class="title">About me</h2>
-	  <p>Some fast news about me:</p>
 		<ul style="padding:0px">
 		  <li>I live in Rome, Italy.</li>
 		  <li>I have an MSc in Computer Science from La Sapienza University of Rome.</li>
@@ -217,7 +216,6 @@
 		  <li>Area of interest: Software development, Distributed Systems, Cloud computing, Security, Big Data.</li>
 		  <li>Music is a very important part of my life. I like to listen to music while developing.</li>
 		  <li>I try to live as healthy as I can, going gym three times a week and doing diet to keep me fit.</li>
-		  <li>I try to keep updated my <a href="https://fponzi.me/linkedin">Linkedin</a> profile, so you can find my previous works and achivements there.</li>
 		  <li>I use Linux for developing and Windows for playing. I like to use the right tool for the job :)</li>
 		</ul>
 
