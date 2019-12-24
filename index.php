@@ -68,7 +68,7 @@
 </nav>
 	<section class="hero">
 		<div class="container" id="hero">
-			<!-- Hidden, until i got a nice picture D: <img src="http://via.placeholder.com/350x150" class="img-fluid img-circle img-rounded">-->
+			<img src="img/profile.jpg" style="width:250px;"class="rounded">
 			<h1 class="intro-title">Hello, I'm Federico Ponzi</h1>
 			<p><span id="whoami" class="whoami"></span><span class="typed-cursor"></span></p>
 			<a href="#portfolio" type="button" class="btn btn-outline-primary custom-btn-primary">Show me the cool stuff</a>
