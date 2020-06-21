@@ -208,14 +208,13 @@
 		<ul style="padding:0px">
 		  <li>I live in Rome, Italy.</li>
 		  <li>I have an MSc in Computer Science from La Sapienza University of Rome.</li>
-          <li>I work as a Distributed Systems Engineer at <a href="https://actyx.io">Actyx</a>. And I love it!</li>
+          <li>I work as a Systems Development Engineer at Amazon Web Services</li>
 		  <li>In my spare time I blog at <a href="https://informaticalab.com">informaticalab.com</a></li>
-		  <li>I know several programming/scripting languages, but I feel fluent in Java and Python. In no particular order, <br> I've also made stuff in: Bash, Go, Assembly, C, PHP, Javascript, Typescript, SML, Swift, Scala.</li>
+		  <li>I know several programming/scripting languages, but I feel fluent in Rust, Java and Python. In no particular order, <br> I've also made stuff in: Go, Assembly, C, PHP, Javascript, Typescript, SML, Swift, Scala, Bash.</li>
 		  <li>I love everything related to Computer Science.</li>
-		  <li>I love learning. I usually try to follow at least 1 course on coursera/edx per semester.</li>
-		  <li>Area of interest: Software development, Distributed Systems, Cloud computing, Security, Big Data.</li>
-		  <li>Music is a very important part of my life. I like to listen to music while developing.</li>
-		  <li>I try to live as healthy as I can, going gym three times a week and doing diet to keep me fit.</li>
+		  <li>Area of most interest: Software development, Distributed Systems, Cloud computing, Security, Big Data.</li>
+		  <li>Music is a very important part of my life. I like to listen to music while developing or running.</li>
+		  <li>I try to live as healthy as I can by going gym three times a week and doing diet to keep me fit.</li>
 		  <li>I use Linux for developing and Windows for playing. I like to use the right tool for the job :)</li>
 		</ul>
 
