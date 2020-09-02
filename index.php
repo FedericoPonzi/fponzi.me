@@ -274,6 +274,11 @@ social <span style="color:#0100b6;font-weight:700">=</span> [
 								<textarea name="message" class="form-control contacts-input contacts-textarea" rows="6" placeholder="Insert your message"></textarea>
 							</div>
 						</div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <input type="text" name="ihaterobots" class="form-control contacts-input contacts-input-text" id="inputPassword4" placeholder="Two plus two?">
+                            </div>
+                        </div>
 						<div class="form-group row">
 							<div class="col-sm-2 ">
 								<button id="submit" type="submit" class="btn btn-primary contacts-send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
@@ -429,7 +434,6 @@ var main = function() {
 		request.open("POST", "send-mail.php");
 		request.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
-				//Il server invia sempre 200
 				document.getElementById("status").innerHTML = this.responseText
 			}
 			$inputs.attr('readonly', false);
