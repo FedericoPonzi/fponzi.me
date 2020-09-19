@@ -206,18 +206,17 @@
 	<section id="about" class="about">
 	  <h2 class="title">About me</h2>
 		<ul style="padding:0px">
-		  <li>I live in Rome, Italy.</li>
+		  <li>I currently live in Dublin, Ireland. Formerly in Rome, Italy.</li>
 		  <li>I have an MSc in Computer Science from La Sapienza University of Rome.</li>
           <li>I work as a Systems Development Engineer at Amazon Web Services</li>
 		  <li>In my spare time I blog at <a href="https://informaticalab.com">informaticalab.com</a></li>
 		  <li>I know several programming/scripting languages, but I feel fluent in Rust, Java and Python. In no particular order, <br> I've also made stuff in: Go, Assembly, C, PHP, Javascript, Typescript, SML, Swift, Scala, Bash.</li>
 		  <li>I love everything related to Computer Science.</li>
-		  <li>Area of most interest: Software development, Distributed Systems, Cloud computing, Security, Big Data.</li>
-		  <li>Music is a very important part of my life. I like to listen to music while developing or running.</li>
+		  <li>Areas of most interest: software development, distributed systems, cloud computing, Security, Big Data.</li>
+		  <li>Music is very important to me. It can help me concentrate or get the right mood.</li>
 		  <li>I try to live as healthy as I can by going gym three times a week and doing diet to keep me fit.</li>
 		  <li>I use Linux for developing and Windows for playing. I like to use the right tool for the job :)</li>
 		</ul>
-
 		<img src="https://projecteuler.net/profile/federicoponzi.png" alt="My ProjectEuler badge">
 
 
@@ -230,7 +229,7 @@
 					<div class="card">
 						<div class="card-body">
 							<div class="social text-left">
-<span style="color:#00b418">#!/usr/bin/python3</span><br>
+<span style="color:#00b418">#!/usr/bin/env python3</span><br>
 social <span style="color:#0100b6;font-weight:700">=</span> [ 
 								<ul>
 								<li class="social-item">
