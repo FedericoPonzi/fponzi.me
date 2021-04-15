@@ -19,3 +19,9 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
+
+Redirect /twitter https://twitter.com/federico_ponzi
+Redirect /linkedin https://www.linkedin.com/in/federicoponzi/
+Redirect /medium https://medium.com/@federico_ponzi
+Redirect /github https://github.com/FedericoPonzi
+Redirect /hackernews https://news.ycombinator.com/user?id=federicoponzi
