@@ -1,0 +1,3 @@
+[submodule "genereto-project/templates/main"]
+	path = genereto-project/templates/main
+	url = git@github.com:FedericoPonzi/genereto-template-main.git
